@@ -1,0 +1,266 @@
+/* @charset UTF-8*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+@font-face {
+	font-family: 'FonteLogo';
+	src : url("fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+
+/*Paragrafo*/
+p{
+	font-size: 15pt;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: justify;
+	/*text-indent: 50px;*/
+}
+
+
+/*Links*/
+a{
+	color: #606060;;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+
+/*Divisão do index com as formatações de cores*/
+div#index{
+
+	width: 1260px;
+	height: 990px;
+	background-color: #ffffff;
+	margin: -20px auto 10px auto;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+	padding: 10px;
+	background: url("../imagens/fundo.jpg")no-repeat 0px 20px;
+}
+
+/*Formatações no cabeçalho*/
+
+header#cabecalho img#icone{
+	height: 10% ; 
+	width: 6%; 	/*AO APLICAR AS FUNCOES DE ALTURA E LARGURA CONSERTOU O TAMANHO DA FOTO*/
+	position: absolute;
+	left: 1250px;
+	top: 40px;	
+
+}
+
+header#cabecalho {
+	border-bottom: 1px #000000 solid;
+	height: 160px;
+}
+
+header#cabecalho h1{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 30pt;
+	color: #000000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	padding: 30px;
+	margin-bottom: 0px;
+}
+
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: -20px;
+	margin-left: 30px;
+}
+
+/*MENU*/
+
+nav#menu { display: block; }
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -10px;
+	left: 1160px;	
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px; 
+	margin: 2px;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+/*Interação do mouse com a mudança de cor do bloco de listas*/
+nav#menu li:hover{
+	background-color: #606060;
+
+}
+
+nav#menu h1{
+	display: none;
+}
+/*Formatação para os ancoras(destino dos links) do menu*/
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*Interação do mouse com os elementos de texto dos elementos do menu*/
+nav#menu a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*Formatação de posicionamento e display da seção(section) do conteúdo da página*/
+
+article#inicio h2{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+/*Formatação no titulo do cabecalho-artigo*/
+header#cabecalho-inicial h1{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+/*Formatação de texto e fundo no subtitulo do cabecalho-artigo*/
+header#cabecalho-inicial h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 13pt;
+	color: #000000;
+	background: none;
+	margin: 0px;
+}
+
+/*Formatação de texto no subtitulo do subtitulo*/
+header#cabecalho-inicial h3{
+	font-size: 15pt;
+	color: #000000;
+}
+
+/*Formatação de alinhamento com o subtitulo do subtitulo.direita*/
+h3.direita{
+	text-align: right;
+}
+
+/*Área para texto*/
+input, textarea{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255,255,255,.8);
+}
+
+textarea#cMsg {
+
+	width: 1250px;
+	height: 400px;
+	margin-top: 50px;
+}
+
+/*Rodapé*/
+
+/*Formatação de estilo no rodapé da página*/
+footer#rodape {
+	margin-top: 60px;
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+/*Formatação de alinhamento do conteúdo do rodapé*/
+footer#rodape p{
+	text-align: center;
+}
+
+footer#rodape h3.musica{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	text-align: center;
+}
+
+* {margin: 0; padding: 0;}
+
+/*Formatações do slider
+
+
+.slider{
+	display: block;
+	height: 200px;
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+.slider li{
+	list-style: none;
+	position: absolute;
+}
+
+/*Formatações nas imagens dos slides lembrando que a altura e largura da imagem tem que estar de acordo com do slider
+.slider img {
+	margin: auto;
+	height: 200px;
+	width: 700px;
+	vertical-align: top;
+}
+
+.slider input {display: none;}
+
+.slider label {
+	background-color: #000;
+	bottom: none;
+	cursor: pointer; procurar outros tipos de cursores
+	display: block;
+	height: 10px;
+	position: absolute;
+	width: 10px;
+	z-index: 10;
+}
+
+.slider li:nth-child(1) label { left: 10px; }
+
+.slider li:nth-child(2) label { left: 40px; }
+
+.slider li:nth-child(3) label { left: 70px; }
+
+.slider img {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+	opacity: 1;
+	visibility: visible;
+	z-index: 10;
+}
+*/
+
+/*Botão*/
+
+img#botao {
+	position: absolute;
+	left: 1200px;
+}

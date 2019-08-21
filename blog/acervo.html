@@ -1,0 +1,89 @@
+<!DOCTYPE html>	
+<hmlt lang="pt-br">
+
+<head>
+
+	<meta charset="utf-8">
+	<title> Apenas um...</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/acervo.css"/>
+	<link rel="icon" type="image/png" href="imagens/iconeagenda.png" />
+
+
+</head>	
+
+<script language="javascript" src="javascript/funcoes.js"></script>
+
+<body> 
+<div id="index">
+
+	<header id=cabecalho>
+	<hgroup>
+	<h1>Blog/Diário pessoal </h1>
+	
+	</hgroup>
+	
+	<img id="icone" src="imagens/agenda.jpeg"/>
+	 
+ 	<nav id="menu">
+
+	<h1>Menu</h1>
+	<ul>
+		<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/agenda.jpeg')"><a href="interface.html">Home</a></li>
+		<li onmouseover="mudaFoto('imagens/acervo.png')" onmouseout="mudaFoto('imagens/agenda.jpeg')"><a href="acervo.html">Publicações</a>
+		</li>
+	</ul>
+	</nav>
+
+	</header>
+
+<article id="inicio">
+	
+	<header id="cabecalho-inicial">
+	<hgroup>
+	<h3> Blog > Publicações </h3>
+	<h1> Consulte suas anotações </h1>
+	<h2> criado por você ...</h2>
+
+	<h3 class="direita">
+	<script language="javascript">
+
+	var now = new Date();
+	var mes = now.getMonth() +1 ;
+	var numerodia = now.getDate();
+	var numeroano=now.getYear();
+	if(numeroano < 2000) {ano = 1900 + numeroano;}
+	else {ano = numeroano;}
+	var hoje =(numerodia + "/" + mes + "/" + ano);
+
+	document.write('  '+hoje);
+
+	</script>
+	</h3>
+
+	</hgroup>
+	</header>
+
+<p> Acesse suas publicações e anotações. </p>
+</article>
+
+
+<!--[OPCIONAL]
+
+[FALTA INSERIR AS CODIFICAÇÕES PARA CONSULTA POR DATA] 
+
+[ESSA CONSULTA SERÁ REALIZADA MEDIANTE CADASTRO DO USUÁRIO NO BLOG]-->
+
+<footer id="rodape">
+<p>Copyright &copy; 2018 - criado por você.. <br/></p>
+
+<h3 class="musica">Sinta a música...</h3>
+
+<p><a class ="link" href="https://www.youtube.com/" target="blank">Youtube</a>|<a class ="link2" href="https://www.spotify.com" target="blank">Spotify</a></p>
+
+</footer>
+
+</div>
+
+</body>
+</hmlt>

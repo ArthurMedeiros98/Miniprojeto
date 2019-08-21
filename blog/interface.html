@@ -1,0 +1,119 @@
+<!DOCTYPE html>	
+<hmlt lang="pt-br">
+
+<head>
+
+	<meta charset="utf-8">
+	<title> Apenas um...</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/> 
+	<link rel="icon" type="image/png" href="imagens/iconeagenda.png" />
+	<!-- MANEIRAS DE INSERIR UM ICONE NO TITULO DA PAGINA
+	<link rel="icon" href="imagens/acervo.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="imagens/acervo.png" type="image/x-icon" /> -->
+
+</head>	
+
+<script language="javascript" src="javascript/funcoes.js"></script>
+
+<script>
+		function enviar(){
+		alert("Anotação publicada!");
+	}
+</script>
+
+<body> 
+<div id="index">
+
+	<header id=cabecalho>
+	<hgroup>
+	<h1> Blog/Diário pessoal </h1>
+	
+	</hgroup>
+	
+	<img id="icone" src="imagens/agenda.jpeg"/>
+	 
+ 	<nav id="menu">
+
+	<h1>Menu</h1>
+	<ul>
+		<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/agenda.jpeg')"><a href="interface.html">Home</a></li>
+		<li onmouseover="mudaFoto('imagens/acervo.png')" onmouseout="mudaFoto('imagens/agenda.jpeg')"><a href="acervo.html">Publicações</a>
+		</li>
+	</ul>
+	</nav>
+
+	</header>
+
+<article id="inicio">
+	
+	<header id="cabecalho-inicial">
+	<hgroup>
+	<h3> Blog > Entradas </h3>
+	<h1> Bem-Vindo! Realize uma entrada </h1>
+	<h2> criado por você ...</h2>
+
+	<h3 class="direita">
+	<script language="javascript">
+
+	var now = new Date();
+	var mes = now.getMonth() +1 ;
+	var numerodia = now.getDate();
+	var numeroano=now.getYear();
+	if(numeroano < 2000) {ano = 1900 + numeroano;}
+	else {ano = numeroano;}
+	var hoje =(numerodia + "/" + mes + "/" + ano);
+
+	document.write('  '+hoje);
+
+	</script>
+	</h3>
+
+	<!-- PROCURAR INSERIR UMA FUNÇÃO PARA ATUALIZAR A DATA AUTOMATICAMENTE //  <h3 class="direita"> 12 de outubro de 2018</h3> -->
+
+	</hgroup>
+	</header>
+
+<!-- <ul class="slider">
+     <li>
+     	<input type="radio" id="slide1" name="slide" checked>
+        <label for="slide1"></label>
+     	<img src="imagens/fundo1.jpg" />
+    </li>
+    <li>
+    	<input type="radio" id="slide2" name="slide" checked>
+        <label for="slide2"></label>
+    	<img src="imagens/fundo4.png" />
+   	</li>
+   	<li>
+    	<input type="radio" id="slide3" name="slide" checked>
+        <label for="slide3"></label> 	
+    	<img src="imagens/fundo3.png" />
+	</li>
+</ul> -->
+
+<!-- <p>Esse blog/diário é destinado à pessoas que querem fazer anotações sobre sua vida, experiências o que for...
+Utilize dele da forma que quiser ou precisar, seja como diário pessoal ou como um descarregar de emoções.
+
+Aqui você é totalmente anônimo para escrever o que quiser, o propósito é fazer você se sentir livre... \o/ </p> -->
+
+
+<textarea name="tMsg" id="cMsg" cols="35" rows="5"></textarea></p>  <!--placeholder="Seja livre!" --> 
+
+
+<a href="acervo.html"> <img id="botao" src= "imagens/botao-enviar.png" onclick="enviar()"/> </a> 
+<!-- PARA COLOCAR UM LINK EM UMA IMAGEM BASTA ATRIBUIR O LINK E DENTRO DA TAG INSERIR A IMAGEM COMO FEITO ACIMA-->
+
+</article>
+
+<footer id="rodape">
+<p>Copyright &copy; 2018 - criado por você.. <br/></p>
+
+<h3 class="musica">Sinta a música...</h3>
+
+<p><a class ="link" href="https://www.youtube.com/" target="blank">Youtube</a>|<a class ="link2" href="https://www.spotify.com" target="blank">Spotify</a></p>
+</footer>
+</div>
+
+</body>
+
+</html>	
